@@ -6,7 +6,7 @@ from airtable import Airtable # import Airtable API python wrapper
 
 #Set airtable base infortion and API key
 base_key = 'appnGSTKWu1qD4Xaj' 
-table_name = 'Table%201'
+table_name = 'Table 1'
 air_table_api_key = 'keymABXgPYp3BUmSL'
 airtable = Airtable(base_key, table_name, api_key=air_table_api_key)
 
@@ -27,3 +27,6 @@ def after_request(response):
     header = response.headers
     header['Access-Control-Allow-Origin'] = '*'
     return response
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8000)
