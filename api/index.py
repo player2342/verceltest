@@ -1,7 +1,6 @@
 from flask import Flask
 from flask import jsonify
 from flask import request
-from flask import render_template
 
 from airtable import Airtable # import Airtable API python wrapper
 
@@ -15,7 +14,7 @@ airtable = Airtable(base_key, table_name, api_key=air_table_api_key)
 app = Flask(__name__)
 @app.route('/', methods=['GET'])    # define landing page route and serve the static file
 def welcome():
-    return render_template('index.html')
+    return "Welcome to my awesome API"
 
 @app.route('/api/', methods=['POST']) # define the email capturing api route to /api/
 def capture_email():
