@@ -5,8 +5,8 @@ from flask import request
 from airtable import Airtable # import Airtable API python wrapper
 
 #Set airtable base infortion and API key
-base_key = 'apptAo2yky4AWLZfB' 
-table_name = 'emails'
+base_key = 'appnGSTKWu1qD4Xaj' 
+table_name = 'Table%201'
 air_table_api_key = 'keymABXgPYp3BUmSL'
 airtable = Airtable(base_key, table_name, api_key=air_table_api_key)
 
