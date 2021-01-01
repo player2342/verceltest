@@ -8,7 +8,7 @@
   ```sh
   pip install -r requirements.txt
   ```
-   * Update these variables `base_key, table_name, air_table_api_key` from `api/index.py` to match with your Airtable API informations.
+   * Update these variables `base_key, table_name, air_table_api_key` from `api/index.py` to match with your [Airtable API informations](https://airtable.com/appnGSTKWu1qD4Xaj/api/docs#curl/introduction)
    * Run the Flask API: the API will be served on http://localhost:8000/api by default
   ```sh
   python api/index.py
