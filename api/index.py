@@ -12,6 +12,7 @@ airtable = Airtable(base_key, table_name, api_key=air_table_api_key)
 
 
 app = Flask(__name__)
+@app.route('/', defaults={'path': ''})
 @app.route('/', methods=['GET'])    # define landing page route and serve the static file
 def welcome():
     return "Welcome to my awesome API"
